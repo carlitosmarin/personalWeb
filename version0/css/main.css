@@ -1,0 +1,186 @@
+body {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+nav {
+	background-color: #FFF;
+	position: fixed;
+	width: 135px;
+	height: 100%;
+	z-index: 2;
+	border-right: 2px solid rgb(55,16,65);
+	transform: translateX(-100%);
+	transition: all 0.5s ease-in-out;
+}
+
+nav.nav-time {
+	box-shadow: 0 0 50px #888888;
+	transform: translateX(0);
+}
+
+nav #list-links {
+	padding: 18px;
+	position: relative;
+	top: 15vh;
+	margin: 0 auto;
+}
+
+nav #list-links li {
+	font-size: 16px;
+	display: block;
+	padding: 0;
+	margin: 15px 0;
+	text-align: right;
+}
+
+nav #list-links li a {
+	text-decoration: none;
+	color: #BBB;
+}
+
+nav #list-links li a:hover, nav #nav-email-to a:hover {
+	color: black;
+	cursor: pointer;
+}
+
+nav #nav-logo {
+	width: 125px;
+	height: 125px;
+	margin: 20px auto;
+	background: url(../images/favicon2.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+}
+
+nav #nav-email-to a {
+	text-decoration: none;
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	color: #BBB;
+}
+
+#content {
+	background-color: palegreen;
+	height: 2000px;
+	padding-top: 40px;
+	z-index: -1;
+}
+
+#content-intro {
+	max-width: 40vw;
+	margin: 0 auto;
+}
+
+#content-background {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	background: url(../images/favicon2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#content-intro i {
+	top: 10px;
+	position: relative;
+	text-align: left;
+	font-size: 30px;
+}
+
+#content-intro i b {
+	display: block;
+	line-height: 20px;
+	font-size: 60px;
+}
+
+#intro-arrow-down {
+	width: 100px;
+	height: 100px;
+	margin: 40px auto 0;
+	background: url(../images/arrow-down.png) rgb(55,15,65);
+	background-repeat: repeat-y;
+	background-attachment: scroll;
+	background-position: 50% 100%;
+	background-size: 83px 83px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+#intro-arrow-down:hover {
+	background-size: 50px 83px;
+	background-position: 50% 265px;
+	background-color: #fff;
+}
+
+#carlos-profile {
+	max-width: 70vw;
+	margin: 200px auto;
+	padding-left: 10%;
+}
+
+#carlos-profile .row div {
+	opacity: 0;
+	transform: translateX(300px);
+	transition: all 1s ease-in-out;
+}
+
+#carlos-profile .row div.is-showing {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+#carlos-profile .row div:nth-child(1) {
+	width: 25vw;
+	height: 478px;
+	background: url(../images/golfo.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+}
+
+#carlos-profile .row div:nth-child(1) figure:hover figcaption {
+	background-color: pink;
+}
+
+#carlos-profile .row div:nth-child(2) {
+	width: 38vw;
+	margin-top: -35px;
+	margin-left: -49px;
+	background-color: rgba(0,0,0, 0.9);
+	padding: 20px;
+	border: 1px solid white;
+}
+
+#carlos-profile .row div:nth-child(2) i {
+	color: white;
+	font-size: 25px;
+	text-align: left;
+	line-height: 30px;
+}
+
+#carlos-profile .row div:nth-child(2) p {
+	color: white;
+	font-size: 15px;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+#carlos-profile .row div:nth-child(3) {
+	width: 40vw;
+	height: 40vh;
+	margin-top: 30px;
+	margin-left: 10px;
+	background: url(../images/carlos-interests.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	background-size: cover;
+	transition: none;
+}
